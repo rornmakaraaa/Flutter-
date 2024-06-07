@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
               Padding(
-                padding: const EdgeInsets.all(32.0),
+                padding: const EdgeInsets.all(30.0),
                 child: Row(
                   children: [
                     const Expanded(
@@ -65,14 +65,14 @@ class MyApp extends StatelessWidget {
                         onPressed: () {
                           print('Phone');
                         },
-                        padding: const EdgeInsets.only(right: 20.0),
+                        padding: const EdgeInsets.only(right: 69.0),
                       ),
-                      const IntrinsicWidth(
-                        child: Text(
-                          'CALL',
-                          style: TextStyle(color: Colors.blue, fontSize:10, ),
-                        ),
-                      ),
+                      //const IntrinsicWidth(
+                        //child: Text(
+                          //'CALL',
+                          //style: TextStyle(color: Colors.blue, fontSize:10, ),
+                        //,
+                      //),
                     ],
                   ),
                   Column(
@@ -99,19 +99,29 @@ class MyApp extends StatelessWidget {
                         onPressed: () {
                           print('Sharing');
                         },
-                        padding: const EdgeInsets.only(left: 20.0),
+                        padding: const EdgeInsets.only(left: 69.0),
                       ),
-                      const IntrinsicWidth(
-                        child: Text(
-                          'SHARE',
-                          style: TextStyle(color: Colors.blue, fontSize: 10,),
-                          //
-                        ),
-                      ),
+                      //const IntrinsicWidth(
+                        //child: Text(
+                          //'SHARE',
+                        //  style: TextStyle(color: Colors.blue, fontSize: 10,),
+                        //),
+                      //),
                     ],
                   ),
                 ],
-              )
+              ),
+              const Padding(
+                padding: EdgeInsets.only(left: 30.0),
+                child: Text(
+                  'Lake Oeschinen lies at the foot of the Bluemlisalp in the Bernese Alps.'
+                      'Situated 1,578 meters above sea levels. it is one of the larger Alpine Lake. '
+                      'A gondola ride from Kandersteg, followed by a half-hour walk through pastures '
+                  'and pine forest, leads you to the lake, which warm to 20 degrees Celsuis in the summer. '
+                    'Activities enjoyed here include rowing, and riding the summer toboggan run ',
+                  style: TextStyle(fontSize: 10.0),
+                ),
+              ),
             ],
           ),
         ),
